@@ -1,9 +1,8 @@
 # rovi_test
 
-## 01. 可変サイズtopicでのメモリーリーク(Python)  
+## directory 01/ 可変サイズtopicでのメモリーリーク(Python)  
 std::vectorを含むtopic(ここではstd_msgs/Float32MultiArray)にて、メモリーリークが発生します。Pythonのみの現象。  
 ### 再現方法  
-ディレクトリ01/以下のコードにて再現できます。  
 1. サブスクライバーを起動します
 ~~~
 01/sub.py
