@@ -4,16 +4,22 @@ import numpy as np
 import roslib
 import rospy
 from std_msgs.msg import Float32MultiArray
+from sensor_msgs.msg import PointCloud
 
-def cb_sub(msg):
-  print len(msg.data)
+def sub_array(msg):
   print type(msg.data)
-  print msg.data[:10]
+  print len(msg.data)
+  return
+
+def sub_pc(msg):
+  print type(msg.data)
+  print len(msg.data)
   return
 
 if __name__ == "__main__":
-  rospy.init_node('numsub',anonymous=True)
-  rospy.Subscriber("array",Float32MultiArray,cb_sub)
+  rospy.init_node('sub_test',anonymous=True)
+  rospy.Subscriber("array",Float32MultiArray,sub_array)
+  rospy.Subscriber("pc",PointCloud,sub_pc)
   try:
     rospy.spin()
   except KeyboardInterrupt:

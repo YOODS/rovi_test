@@ -29,3 +29,5 @@ include_directories(
 
 add_executable(pubarray 01/pubarray.cpp)
 target_link_libraries(pubarray ${catkin_LIBRARIES})
+add_executable(pubpc 01/pubpc.cpp)
+target_link_libraries(pubpc ${catkin_LIBRARIES})
