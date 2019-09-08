@@ -12,8 +12,8 @@ def sub_array(msg):
   return
 
 def sub_pc(msg):
-  print type(msg.data)
-  print len(msg.data)
+  print type(msg.points)
+  print len(msg.points)
   return
 
 if __name__ == "__main__":

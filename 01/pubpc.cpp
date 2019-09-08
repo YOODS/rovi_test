@@ -41,7 +41,7 @@ int main(int argc, char **argv){
   ros::init(argc, argv, "pubpc");
   ros::NodeHandle n;
   nh = &n;
-  ros::Timer timer = n.createTimer(ros::Duration(2.0), callback);
+  ros::Timer timer = n.createTimer(ros::Duration(1.0), callback);
   ros::Publisher p0=n.advertise<sensor_msgs::PointCloud>("pc",1);
   pub = &p0;
   ros::spin();
