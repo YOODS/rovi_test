@@ -13,7 +13,7 @@ Param={
   "icp_threshold": 0.003,
   "eval_threshold": 0.001,
   "rotate":0,
-  "repeat":1}
+  "repeat":2}
 
 model=o3d.read_point_cloud("../primitive/arc1.ply")
 scene=o3d.read_point_cloud("../primitive/arc2.ply")
